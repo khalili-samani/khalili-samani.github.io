@@ -1,0 +1,44 @@
+body {
+    background-color: lightblue;
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+
+section {
+    margin: 40px;
+    font-family: Tahoma, sans-serif;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-family: Tahoma, sans-serif;
+}
