@@ -64,6 +64,7 @@ footer {
     text-align: center;
     padding: 15px;
     border-radius: 10px;
+    position: fixed;
 }
 
 /* Buttons - Consistent with Navigation */
