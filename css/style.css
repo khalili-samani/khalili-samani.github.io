@@ -59,12 +59,15 @@ main {
 
 /* Footer - Slightly Darker Background */
 footer {
-    background: #003366; /* Dark Navy Blue */
+    background: #003366; /* Dark Blue */
     color: white;
     text-align: center;
     padding: 15px;
     border-radius: 10px;
+    width: 100%;
     position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 /* Buttons - Consistent with Navigation */
