@@ -69,6 +69,7 @@ footer {
     padding: 15px;
     border-radius: 10px;
     width: 100%;
+    position: fixed;
 }
 
 /* ✅ Buttons - Rounded and stylish */
