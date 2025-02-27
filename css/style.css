@@ -42,3 +42,20 @@ footer {
     bottom: 0;
     font-family: Tahoma, sans-serif;
 }
+ul {
+    list-style: none;  /* Remove default bullets */
+    padding: 0;        /* Remove default padding */
+}
+
+li {
+    display: flex;     /* Keeps content on the same line */
+    align-items: center; /* Aligns text and bullet properly */
+    margin-bottom: 5px; /* Adjust spacing between list items */
+}
+
+li::before {
+    content: "•";       /* Custom bullet */
+    color: black;       /* Bullet color */
+    font-size: 16px;    /* Bullet size */
+    margin-right: 8px;  /* Space between bullet and text */
+}
