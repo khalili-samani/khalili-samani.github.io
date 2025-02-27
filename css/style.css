@@ -1,29 +1,34 @@
-/* ✅ Ensure the page fills the entire screen */
+/* ✅ Make sure the full page takes up all available height */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: lightblue; /* Matches your theme */
+    background-color: lightblue; /* Your original theme */
     font-family: Tahoma, sans-serif;
     text-align: center;
 }
 
-/* ✅ The wrapper (container) ensures footer is pushed down */
+/* ✅ Wrapper to maintain equal spacing */
 .wrapper {
-    flex: 1; /* Expands to take available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centers content horizontally */
     justify-content: space-between;
+    width: 90%; /* Ensures equal spacing from left and right */
+    max-width: 900px; /* Prevents content from stretching too much */
+    margin: 0 auto; /* Centers everything */
 }
 
-/* ✅ Header - White with soft shadow */
+/* ✅ Header - White, rounded, and centered */
 header {
     background-color: white;
     padding: 20px;
     box-shadow: 0px 4px 2px -2px gray;
     border-radius: 10px;
+    width: 100%; /* Ensures equal left & right spacing */
 }
 
 /* ✅ Navigation Bar */
@@ -31,6 +36,7 @@ nav {
     background-color: #0056b3;
     padding: 10px;
     border-radius: 10px;
+    width: 100%;
 }
 
 nav ul {
@@ -58,15 +64,14 @@ nav a:hover {
     background: #004494;
 }
 
-/* ✅ Main Content - Ensures content takes space */
+/* ✅ Main Content - Perfectly centered */
 main {
-    flex-grow: 1; /* Makes content area push footer down */
+    flex-grow: 1;
     background: white;
     padding: 20px;
-    margin: 20px auto;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    width: 100%; /* Ensures equal left & right spacing */
 }
 
 /* ✅ Footer - Always at the bottom */
@@ -77,10 +82,10 @@ footer {
     padding: 15px;
     border-radius: 10px;
     width: 100%;
-    margin-top: auto; /* Ensures footer stays at the bottom */
+    margin-top: auto;
 }
 
-/* ✅ Buttons - Rounded */
+/* ✅ Buttons - Even spacing */
 button {
     background: #007BFF;
     color: white;
@@ -95,10 +100,11 @@ button:hover {
     background: #0056b3;
 }
 
-/* ✅ Lists - Rounded and formatted */
+/* ✅ Lists - Even margins */
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -109,18 +115,21 @@ li {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* ✅ Images - Rounded */
+/* ✅ Images - Centered & Rounded */
 img {
     border-radius: 12px;
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto; /* Centers images */
 }
 
-/* ✅ Forms - Rounded */
+/* ✅ Forms - Evenly Spaced */
 input, textarea {
     width: 90%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto;
     border: 1px solid gray;
     border-radius: 10px;
+    display: block;
 }
