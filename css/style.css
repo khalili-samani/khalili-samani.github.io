@@ -6,7 +6,7 @@ html, body {
     flex-direction: column;
     background-color: lightblue;
     font-family: Tahoma, sans-serif;
-    text-align: center;
+    text-align: justify;
 }
 
 .wrapper {
