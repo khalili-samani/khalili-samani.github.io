@@ -1,0 +1,137 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Page Layout */
+html,
+body {
+    height: 100%;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Page Container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+/* Individual Tab */
+.tab {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 20px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #e0e0e0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.tab:hover {
+    background-color: #d5d5d5;
+}
+
+/* Active Tab */
+.tab.active {
+    background-color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+}
+
+/* Section */
+.section {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #222;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Project Items */
+.project-item {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #1a4f8b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c2c2c;
+    color: #ccc;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .tabs {
+        padding: 10px;
+    }
+
+    .tab {
+        margin-bottom: 5px;
+    }
+
+    .section {
+        width: 92%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
