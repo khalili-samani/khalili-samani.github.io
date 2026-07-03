@@ -19,6 +19,13 @@ body {
     line-height: 1.6;
 }
 
+.article,
+.blog-post,
+.page-content {
+  text-align: justify;
+  hyphens: auto;
+}
+
 /* Page Container */
 .page-container {
     display: flex;
@@ -52,11 +59,6 @@ header {
     border-top-right-radius: 5px;
     font-size: 14px;
     transition: background-color 0.2s ease;
-}
-
-div {
-	text-align: justify;
-	text-justify: inter-word;
 }
 
 .tab:hover {
