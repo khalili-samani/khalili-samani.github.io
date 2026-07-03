@@ -54,6 +54,11 @@ header {
     transition: background-color 0.2s ease;
 }
 
+div {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 .tab:hover {
     background-color: #d5d5d5;
 }
