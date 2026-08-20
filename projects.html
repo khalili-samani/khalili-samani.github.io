@@ -5,9 +5,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
-        content="Data analytics, business intelligence, machine learning and data engineering projects by Ali Khalili, including Power BI dashboards, SQL pipelines, forecasting and financial analytics.">
-    <title>Projects | Ali Khalili</title>
+        content="Explore Ali Khalili's data analytics, business intelligence, data engineering and machine learning projects using Python, SQL, MySQL, Power BI, Excel, DuckDB, XGBoost and Australian public data.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Data Analytics & Engineering Projects | Ali Khalili">
+    <meta property="og:description"
+        content="Portfolio projects covering data analytics, Power BI, SQL, data engineering, forecasting, financial analytics and decision-support systems.">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Data Analytics & Engineering Projects | Ali Khalili">
+    <meta name="twitter:description"
+        content="Portfolio projects covering data analytics, Power BI, SQL, data engineering, forecasting, financial analytics and decision-support systems.">
+
+    <title>Data Analytics & Engineering Projects | Ali Khalili</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,212 +43,466 @@
 
         <section class="section" aria-labelledby="projects-heading">
 
-            <h1 id="projects-heading">Projects</h1>
+            <h1 id="projects-heading">Data Analytics, Engineering & Machine Learning Projects</h1>
 
             <p>
-                A selection of end-to-end projects demonstrating how I turn raw data into reliable analysis,
-                decision-support tools and stakeholder-ready reporting using Power BI, SQL, Python, machine
-                learning and modern data workflows.
+                A selection of portfolio projects demonstrating practical work across data analytics,
+                business intelligence, data engineering, machine learning and decision support. The projects
+                cover data cleaning, SQL and dimensional modelling, Power BI and Excel reporting, automated
+                data pipelines, financial analytics, time-series forecasting and reproducible analytical
+                workflows using Australian and synthetic datasets.
             </p>
 
             <article class="project-item">
+
                 <h2>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/dfo_sales" target="_blank"
+                    <a href="https://github.com/khalili-samani/projects/tree/main/dfo_sales"
+                        target="_blank"
                         rel="noopener noreferrer">
-                        Luxury Fashion Outlet Sales Analysis
+                        Luxury Fashion Outlet Sales Analysis in Power BI
                     </a>
                 </h2>
 
                 <p>
-                    Built a five-page Power BI dashboard for a fictional luxury retail outlet to help store and
-                    regional managers assess revenue quality, profitability, promotions, product mix, staff
-                    performance and customer contact capture. I cleaned and standardised 6,287 transaction rows in
-                    Power Query, retained 6,200 unique normalised transactions, designed a star-schema model and
-                    created DAX measures for sales, gross profit, margin, average order value, returns, discounts and
-                    email capture.
+                    Built a five-page Power BI management report analysing sales, profitability, promotions,
+                    products, staff, customer segments, returns and customer contact-data capture for a
+                    synthetic luxury fashion outlet. The workflow cleaned 6,287 raw transaction rows in
+                    Power Query, retained 6,200 unique transactions, established a star-schema data model and
+                    created reusable DAX measures for commercial and operational KPIs.
                 </p>
 
                 <p>
-                    The dashboard reported $2.369 million in net sales, $917,029 in gross profit and a 38.71% gross
-                    margin. The analysis identified outerwear as a material revenue category with the lowest category
-                    margin, while accessories delivered the highest margin but the lowest sales, giving management
-                    clear areas for pricing, promotion and product-placement review. The dataset and business scenario
-                    are synthetic and intended for portfolio demonstration.
+                    The completed report recorded $2,368,788.63 in net sales, $917,028.73 in gross profit,
+                    a 38.71% gross margin, a $382.06 average order value and a 3.24% return rate. Category
+                    analysis showed womenswear generated the highest net sales, while accessories recorded
+                    the highest gross margin and outerwear the lowest. The dataset, staff, customers and
+                    operating scenario are entirely synthetic.
                 </p>
 
-                <p><strong>Technologies:</strong> Power BI Desktop, Power Query (M), DAX</p>
-                <p><strong>Skills:</strong> Data cleaning, dimensional modelling, KPI design, dashboard development, business analysis, data visualisation, stakeholder communication</p>
-				<p>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/dfo_sales" target="_blank"
-                        rel="noopener noreferrer" aria-label="View Luxury Fashion Outlet Sales Analysis project on GitHub">
-                        View project on GitHub
+                <p>
+                    <strong>Technologies:</strong>
+                    Power BI Desktop, Power Query (M), DAX
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Data cleaning, dimensional modelling, KPI design, DAX, dashboard development,
+                    reconciliation, business analysis, data visualisation, stakeholder reporting
+                </p>
+
+                <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/dfo_sales"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Luxury Fashion Outlet Sales Analysis in Power BI on GitHub">
+                        View Power BI project on GitHub
                     </a>
                 </p>
+
             </article>
 
             <article class="project-item">
+
                 <h2>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/nem_forecasting" target="_blank"
+                    <a href="https://github.com/khalili-samani/projects/tree/main/nem_forecasting"
+                        target="_blank"
                         rel="noopener noreferrer">
                         Australian NEM Price Forecasting
                     </a>
                 </h2>
 
                 <p>
-                    Developed an end-to-end forecasting platform to predict Australian National Electricity Market
-                    dispatch prices 30 minutes ahead using AEMO market data and weather observations. The workflow
-                    covers data ingestion, MySQL storage, cleaning, leakage-safe feature engineering, chronological
-                    model validation and delivery through an interactive Streamlit dashboard with scenario analysis
-                    and market-history views.
+                    Developed a Python-based forecasting workflow for estimating Australian National
+                    Electricity Market dispatch prices 30 minutes ahead using AEMO market data, available
+                    Bureau of Meteorology temperature observations and time-series feature engineering.
+                    The implemented pipeline covers data ingestion, MySQL storage, cleaning, region-specific
+                    lag and rolling features, chronological model validation and delivery through a
+                    Streamlit forecasting interface.
                 </p>
 
                 <p>
-                    The pipeline processed 129,495 market records and trained an XGBoost regressor on more than
-                    90,000 observations. On the hold-out test set, the model achieved a mean absolute error of
-                    $19.02/MWh, RMSE of $33.43/MWh and R² of 0.5085, demonstrating useful short-term signal while
-                    clearly documenting the difficulty of forecasting extreme price spikes.
+                    The persisted XGBoost model recorded a hold-out mean absolute error of $19.02/MWh,
+                    RMSE of $33.43/MWh and R² of 0.5085 using a chronological 70% training, 15% validation
+                    and 15% test split. The repository treats these as prototype evaluation results rather
+                    than evidence of production forecasting performance because the saved test artefact
+                    does not preserve all contextual information required for a complete benchmark.
                 </p>
 
-                <p><strong>Technologies:</strong> Python, SQL, MySQL, Pandas, SQLAlchemy, XGBoost, Streamlit</p>
-                <p><strong>Skills:</strong> Time-series forecasting, ETL, feature engineering, model evaluation, dashboard development, analytical reporting</p>
                 <p>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/nem_forecasting" target="_blank"
-                        rel="noopener noreferrer" aria-label="View Australian NEM Price Forecasting project on GitHub">
-                        View project on GitHub
+                    <strong>Technologies:</strong>
+                    Python, MySQL, Pandas, SQLAlchemy, XGBoost, Streamlit
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Time-series forecasting, data ingestion, ETL, feature engineering, leakage prevention,
+                    chronological validation, model evaluation, analytical application development
+                </p>
+
+                <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/nem_forecasting"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Australian NEM Price Forecasting project on GitHub">
+                        View forecasting project on GitHub
                     </a>
                 </p>
+
             </article>
 
             <article class="project-item">
+
                 <h2>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/asx_trading_agent" target="_blank"
+                    <a href="https://github.com/khalili-samani/projects/tree/main/asx_trading_agent"
+                        target="_blank"
                         rel="noopener noreferrer">
                         ASX Equity Intelligence Agent
                     </a>
                 </h2>
 
                 <p>
-                    Designed a multi-agent decision-support workflow that automates daily ASX equity analysis across
-                    market-data collection, next-day return forecasting, portfolio risk assessment, recommendation
-                    generation and executive-style market reporting. Five specialised agents share structured state
-                    through LangGraph, while the language model is restricted to communicating supplied analytical
-                    outputs rather than creating forecasts or trading signals.
+                    Designed a structured equity-research workflow that collects Australian market data,
+                    forecasts next-session returns, calculates risk measures, applies deterministic
+                    recommendation rules and generates a daily Markdown market briefing. Five LangGraph
+                    nodes manage market data, forecasting, risk, strategy and report generation through a
+                    shared typed state, with Gemini used only after the numerical analysis and recommendation
+                    logic have been completed.
                 </p>
 
                 <p>
-                    A documented pipeline run loaded 2,540 OHLCV records for 10 ASX-listed companies, generated 10
-                    Random Forest forecasts using walk-forward validation, assessed Value at Risk, volatility, beta,
-                    drawdown and sector concentration, and produced a daily market brief. This project demonstrates
-                    how machine learning, risk analytics and generative AI can be combined with explicit controls for
-                    explainability and analytical integrity.
+                    The supplied DuckDB database contains 2,630 equity OHLCV records across 10 ASX-listed
+                    securities. A verified run on 23 June 2026 processed all 10 watchlist tickers, generated
+                    10 forecasts and 10 risk assessments, and produced one BUY, eight HOLD and one REDUCE
+                    recommendation. The verified execution demonstrates pipeline consistency, not forecast
+                    profitability or investment performance.
                 </p>
 
-                <p><strong>Technologies:</strong> Python, DuckDB, Pandas, NumPy, Scikit-learn, LangGraph, Gemini API</p>
-                <p><strong>Skills:</strong> Financial analytics, machine learning, risk analysis, workflow orchestration, prompt design, automated reporting</p>
                 <p>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/asx_trading_agent" target="_blank"
-                        rel="noopener noreferrer" aria-label="View ASX Equity Intelligence Agent project on GitHub">
-                        View project on GitHub
+                    <strong>Technologies:</strong>
+                    Python, DuckDB, Pandas, NumPy, Scikit-learn, LangGraph, Gemini API
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Financial time-series analysis, machine learning, feature engineering, risk analytics,
+                    workflow orchestration, deterministic decision logic, LLM-constrained reporting
+                </p>
+
+                <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/asx_trading_agent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View ASX Equity Intelligence Agent project on GitHub">
+                        View equity intelligence project on GitHub
                     </a>
                 </p>
+
             </article>
 
             <article class="project-item">
+
                 <h2>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/aus_energy_automation" target="_blank"
+                    <a href="https://github.com/khalili-samani/projects/tree/main/aus_energy_automation"
+                        target="_blank"
                         rel="noopener noreferrer">
-                        Australian Energy Market Analysis Pipeline
+                        Australian NEM Price and Demand Pipeline
                     </a>
                 </h2>
 
                 <p>
-                    Created a repeatable ETL and reporting pipeline that converts raw Australian Energy Market
-                    Operator data into analysis-ready tables, reusable SQL views and automated visual reports. The
-                    solution validates and standardises five-minute price and demand data, loads it into a MySQL fact
-                    table, and separates reporting logic from presentation through dedicated daily and regional
-                    summary views.
+                    Built a Python and MySQL analytics pipeline for downloading, cleaning, storing,
+                    aggregating and visualising wholesale electricity price and demand data from the
+                    Australian National Electricity Market. The workflow standardises AEMO monthly files,
+                    loads five-minute settlement records into a relational fact table, creates reusable SQL
+                    reporting views and generates charts directly from database queries.
                 </p>
 
                 <p>
-                    The analysis compared NSW, Queensland and Victoria across average price, demand, volatility and
-                    negative-price frequency. March 2026 results showed Victoria had the highest price volatility and
-                    widest price distribution, while NSW generally recorded the highest average prices. Four
-                    automated charts translate the operational records into business-readable regional insights.
+                    The supplied March 2026 dataset contains 26,784 records across New South Wales,
+                    Queensland and Victoria, with 8,928 five-minute intervals per region. Victoria recorded
+                    the lowest average price but the highest interval-level price volatility and the highest
+                    frequency of negative-price intervals, demonstrating why monthly averages need to be
+                    interpreted alongside price dispersion and volatility.
                 </p>
 
-                <p><strong>Technologies:</strong> Python, SQL, MySQL, Pandas, SQLAlchemy, PyMySQL, Matplotlib</p>
-                <p><strong>Skills:</strong> ETL development, data validation, relational modelling, SQL reporting, market analysis, automated visualisation</p>
                 <p>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/aus_energy_automation" target="_blank"
-                        rel="noopener noreferrer" aria-label="View Australian Energy Market Analysis Pipeline project on GitHub">
-                        View project on GitHub
+                    <strong>Technologies:</strong>
+                    Python, Pandas, SQL, MySQL, SQLAlchemy, PyMySQL, Matplotlib
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    ETL development, data validation, relational modelling, SQL reporting,
+                    electricity-market analysis, pipeline orchestration, automated visualisation
+                </p>
+
+                <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/aus_energy_automation"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Australian NEM Price and Demand Pipeline project on GitHub">
+                        View NEM analytics pipeline project on GitHub
                     </a>
                 </p>
+
             </article>
 
             <article class="project-item">
+
                 <h2>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/market_analysis" target="_blank"
+                    <a href="https://github.com/khalili-samani/projects/tree/main/market_analysis"
+                        target="_blank"
                         rel="noopener noreferrer">
                         Sector-Based Stock Market Analysis
                     </a>
                 </h2>
 
                 <p>
-                    Built a reusable financial analytics pipeline to compare risk and return across 12 large US
-                    companies in Technology, Finance, Energy and Healthcare. Historical price data is cleaned and
-                    loaded into a dimensional MySQL warehouse, then transformed through three analytical SQL views
-                    that calculate daily returns, company summaries and sector-level performance.
+                    Built a Python and MySQL analytics workflow comparing daily returns and price volatility
+                    across 12 selected US-listed companies in Technology, Finance, Energy and Healthcare.
+                    The pipeline cleans OHLCV files with Pandas, loads 9,024 price records into a dimensional
+                    MySQL model and uses SQL analytical views to calculate daily returns and company-level
+                    and sector-level metrics.
                 </p>
 
                 <p>
-                    The reporting layer showed Nvidia had both the highest average daily return and highest
-                    volatility, while Healthcare companies clustered in the lower-risk, lower-return range. The
-                    project demonstrates practical use of SQL window functions, dimensional modelling and automated
-                    visualisation to communicate risk-return trade-offs rather than presenting raw market data alone.
+                    Across the supplied period from 1 March 2023 to 27 February 2026, Nvidia recorded both
+                    the highest average daily return and the highest daily volatility in the selected sample,
+                    while Johnson &amp; Johnson recorded the lowest daily volatility. The analysis is
+                    descriptive and compares the selected securities rather than representing each sector
+                    or providing investment recommendations.
                 </p>
 
-                <p><strong>Technologies:</strong> Python, SQL, MySQL, Pandas, SQLAlchemy, Matplotlib</p>
-                <p><strong>Skills:</strong> SQL analytics, data warehousing, window functions, return and volatility analysis, financial reporting, data visualisation</p>
                 <p>
-                    <a href="https://github.com/khalili-samani/projects/tree/main/market_analysis" target="_blank"
-                        rel="noopener noreferrer" aria-label="View Sector-Based Stock Market Analysis project on GitHub">
-                        View project on GitHub
+                    <strong>Technologies:</strong>
+                    Python, Pandas, SQL, MySQL, SQLAlchemy, Matplotlib
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    SQL analytics, dimensional modelling, window functions, return analysis,
+                    volatility analysis, financial data pipelines, reproducible visualisation
+                </p>
+
+                <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/market_analysis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Sector-Based Stock Market Analysis project on GitHub">
+                        View stock market analysis project on GitHub
                     </a>
                 </p>
+
             </article>
 
             <article class="project-item">
+
                 <h2>
                     <a href="https://github.com/khalili-samani/projects/tree/main/messy_data_generator_Aus_housing"
-                        target="_blank" rel="noopener noreferrer">
+                        target="_blank"
+                        rel="noopener noreferrer">
                         Australian Housing Data Quality Simulator
                     </a>
                 </h2>
 
                 <p>
-                    Developed a configurable Python tool that generates realistic synthetic Australian residential
-                    property data for data-cleaning, ETL, SQL, BI and machine-learning practice. The simulator covers
-                    every state and territory from 2020 to 2025 and models changing market conditions such as cash
-                    rates, auction clearance, buyer sentiment, lockdown effects and regional activity.
+                    Developed a configurable Python program that generates synthetic Australian residential
+                    property-sale data containing deliberately introduced data-quality defects. The generator
+                    creates plausible property and transaction attributes before introducing missing values,
+                    inconsistent categories, malformed fields, invalid values, exact duplicates and
+                    near-duplicate listing records for downstream cleaning and ETL practice.
                 </p>
 
                 <p>
-                    The output intentionally includes 15 categories of common data-quality problems, including
-                    missing values, duplicate records, mixed date and price formats, inconsistent categories,
-                    postcode mismatches, outliers and field swaps. This provides a reproducible and privacy-safe test
-                    environment for profiling, validation, transformation and downstream analytics workflows.
+                    A verified example covering January 2021 to December 2023 for New South Wales,
+                    Queensland and Victoria produced 11,190 rows across 37 columns, including 128 fully
+                    duplicated rows and 360 rows with repeated listing identifiers. Because generation is
+                    stochastic, these figures describe the supplied example rather than guaranteed output
+                    from every run.
                 </p>
 
-                <p><strong>Technologies:</strong> Python, Pandas, NumPy</p>
-                <p><strong>Skills:</strong> Synthetic data generation, data quality engineering, data modelling, ETL testing, validation design, analytics preparation</p>
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, Pandas
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Synthetic data generation, data-quality engineering, rule-based simulation,
+                    malformed-data handling, ETL test-data preparation, validation design,
+                    exploratory data analysis
+                </p>
+
                 <p>
                     <a href="https://github.com/khalili-samani/projects/tree/main/messy_data_generator_Aus_housing"
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="View Australian Housing Data Quality Simulator project on GitHub">
-                        View project on GitHub
+                        View data quality simulator project on GitHub
                     </a>
                 </p>
+
+            </article>
+
+            <article class="project-item">
+
+                <h2>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/australian_health_excel_analysis"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Australian Emergency Department Demand and Waiting Time Analysis
+                    </a>
+                </h2>
+
+                <p>
+                    Created an Excel-only healthcare analytics project using a realistic synthetic emergency
+                    department dataset to demonstrate data cleaning, validation, KPI design, formula-based
+                    analysis, charting and management dashboard development. The cleaned dataset contains
+                    12,079 encounters from 12 fictional facilities across Australian states and territories,
+                    covering 1 January 2024 to 31 December 2025.
+                </p>
+
+                <p>
+                    The analysis reported a 4.9% increase in presentation volume in 2025, an overall
+                    within-target rate of 44.7% and an admission rate of 29.0% in the synthetic scenario.
+                    Remote facilities recorded the lowest within-target performance by region type, while
+                    mental health presentations had an average emergency department length of stay of
+                    approximately 438 minutes. These findings are illustrative and must not be interpreted
+                    as real Australian health-service performance.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Microsoft Excel
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Excel data cleaning, structured references, XLOOKUP, INDEX/MATCH, SUMIFS,
+                    COUNTIFS, dynamic arrays, KPI design, dashboard development, healthcare analytics,
+                    data-quality validation
+                </p>
+
+                <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/australian_health_excel_analysis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Australian Emergency Department Demand and Waiting Time Analysis project on GitHub">
+                        View Australian emergency project on GitHub
+                    </a>
+                </p>
+
+            </article>
+
+            <article class="project-item">
+
+                <h2>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/australian_housing_mysql_analytics"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Australian Housing SQL Quality and Market Analytics Warehouse
+                    </a>
+                </h2>
+
+                <p>
+                    Extended the Australian Housing Data Quality Simulator into a governed MySQL analytics
+                    warehouse that transforms intentionally unreliable synthetic property extracts into
+                    auditable analytical data products. The workflow preserves raw batch lineage, applies
+                    reusable standardisation rules, classifies duplicate and rejected records, uses
+                    deterministic survivorship logic and loads accepted canonical sale events into a
+                    dimensional warehouse.
+                </p>
+
+                <p>
+                    The architecture includes raw and staging layers, a star schema, rejected-record auditing,
+                    reporting marts and SQL-based data-quality tests. Analytical SQL covers window functions,
+                    Australian financial-year logic, rolling metrics, cohort analysis, SCD Type 2 agent
+                    dimensions, reconciliation and performance optimisation. Results depend on the selected
+                    synthetic generator run, so the repository does not claim precomputed market findings.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    MySQL, SQL, Python, Docker
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Analytics engineering, SQL data cleaning, dimensional modelling, duplicate survivorship,
+                    SCD Type 2 modelling, data-quality testing, reconciliation, analytical SQL,
+                    warehouse optimisation
+                </p>
+
+                <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/australian_housing_mysql_analytics"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Australian Housing SQL Quality and Market Analytics Warehouse project on GitHub">
+                        View Australian housing project on GitHub
+                    </a>
+                </p>
+
+            </article>
+
+            <article class="project-item">
+
+                <h2>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/qld-elective-surgery-optimiser"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Queensland Elective Surgery Capacity and Waitlist Recovery Optimiser
+                    </a>
+                </h2>
+
+                <p>
+                    Developing a healthcare operations analytics system intended to support allocation of
+                    additional elective-surgery capacity across Queensland public facilities and specialties.
+                    The project frames capacity allocation as a constrained decision problem that must account
+                    for long waits, clinical urgency, operational limits, service coverage, regional access,
+                    equity and uncertainty rather than relying on throughput alone.
+                </p>
+
+                <p>
+                    The implemented foundation currently includes typed configuration, validated YAML planning
+                    scenarios, structured logging, a Typer command-line interface, Queensland Open Data CKAN
+                    dataset discovery, deterministic resource identification, retry-aware retrieval,
+                    source validation, SHA-256 hashing, immutable raw-file storage, duplicate-content
+                    detection, lineage manifests and automated ingestion tests. Data-quality modelling,
+                    DuckDB analytics, OR-Tools optimisation, simulation, FastAPI and Streamlit components
+                    remain in development or planned and are not presented as completed results.
+                </p>
+
+                <p>
+                    <strong>Implemented technologies:</strong>
+                    Python 3.12, Pydantic Settings, YAML, Typer, pytest
+                </p>
+
+                <p>
+                    <strong>Planned analytical stack:</strong>
+                    DuckDB, OR-Tools, FastAPI, Streamlit
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Healthcare analytics engineering, API data ingestion, configuration management,
+                    data lineage, reproducible pipelines, validation, automated testing,
+                    operations research design
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    Active development
+                </p>
+
+                 <p>
+                    <a href="https://github.com/khalili-samani/projects/tree/main/qld-elective-surgery-optimiser"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Queensland Elective Surgery Capacity and Waitlist Recovery Optimiser project on GitHub">
+                        View Queensland health project on GitHub
+                    </a>
+                </p>
+
             </article>
 
         </section>
