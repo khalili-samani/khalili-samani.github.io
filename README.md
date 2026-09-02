@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal portfolio website.
 
-The website showcases my background, technical skills and portfolio projects in quantitative data analytics, machine learning, data engineering and statistical modelling.
+The website showcases my background, technical skills and portfolio projects in data analytics, machine learning, data engineering and statistical modelling.
 
 ## Website Sections
 
@@ -18,4 +18,4 @@ The website showcases my background, technical skills and portfolio projects in 
 
 ## Purpose
 
-The website serves as a central portfolio for recruiters, hiring managers and collaborators, providing an overview of my experience and links to my GitHub projects and professional profiles.
+The website serves as a central portfolio, providing an overview of my experience and links to my GitHub projects and professional profiles.
